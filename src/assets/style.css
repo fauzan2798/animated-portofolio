@@ -80,3 +80,17 @@
     border-color: var(--primary-neon);
   }
 }
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28627c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(40, 98, 124, 0.2);
+  border-radius: 10px;
+}
