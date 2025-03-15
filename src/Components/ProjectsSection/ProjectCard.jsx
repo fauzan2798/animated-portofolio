@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Button from "../reusable/Button";
 
 // eslint-disable-next-line react/prop-types
-function ProjectCard({ projects }) {
+function ProjectCard({ project }) {
   // Framer motion variants for hover animations
   const cardVariants = {
     hover: {
@@ -25,17 +25,17 @@ function ProjectCard({ projects }) {
       {/* Project Image */}
       <div className="w-full h-48 rounded-lg overflow-hidden mb-6">
         <img
-          src={projects.image}
-          alt={projects.title}
+          src={project.image}
+          alt={project.title}
           className="w-full h-full object-cover"
         />
       </div>
 
       {/* Project Title */}
-      <h3 className="text-2xl font-bold text-white mb-2">{projects.title}</h3>
+      <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
 
       {/* Project Description */}
-      <p className="text-gray-300 mb-4">{projects.desc}</p>
+      <p className="text-gray-300 mb-4">{project.desc}</p>
 
       <Button>View Project</Button>
     </motion.div>

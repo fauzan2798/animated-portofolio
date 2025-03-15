@@ -70,7 +70,7 @@ function ProjectMain() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
-        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-8 py-8 mt-20 justify-center "
+        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-8 py-8 mt-20 justify-center"
       >
         {projects.map((project, index) => (
           <motion.div
@@ -81,7 +81,7 @@ function ProjectMain() {
               visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
             }}
           >
-            <ProjectCard projects={project} />
+            <ProjectCard project={project} />
           </motion.div>
         ))}
       </motion.div>
