@@ -39,7 +39,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="relative z-[999] min-h-screen flex items-center justify-center bg-transparent overflow-hidden p-12 "
+      className="relative z-[999] min-h-screen flex items-center justify-center bg-transparent p-12 "
     >
       <div className="absolute inset-0 z-0">
         <div className="z-10 text-center">
